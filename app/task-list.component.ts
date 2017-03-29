@@ -5,7 +5,7 @@ import { Task } from './task.model'
   selector: 'task-list',
   template: `
   <ul>
-    <li (click)="isDone(currentTask)" *ngFor="let currentTask of childTaskList">{{currentTask.description}}
+    <li (click)="isDone(currentTask)" *ngFor="let currentTask of childTaskList | completeness">{{currentTask.description}}
     <button (click)="editButtonHasBeenClicked(currentTask)">Edit!</button></li>
   </ul>
   `
