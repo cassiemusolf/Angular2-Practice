@@ -4,13 +4,15 @@ import { AppComponent }   from './app.component';
 import { FormsModule }  from '@angular/forms';
 import { TaskListComponent } from './task-list.component';
 import { EditTaskComponent } from './edit-task.component';
+import { NewTaskComponent } from './new-task.component';
 
 @NgModule({
   imports: [ BrowserModule,
-    FormsModule ],
+            FormsModule ],
   declarations: [ AppComponent,
-      TaskListComponent,
-    EditTaskComponent],
+                TaskListComponent,
+                EditTaskComponent,
+                NewTaskComponent],
   bootstrap: [ AppComponent ]
 })
 
